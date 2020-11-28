@@ -1,0 +1,99 @@
+.{
+
+	margin:0;
+	padding:0;
+
+}
+
+body {
+
+		font-family:arial;
+		background:   grey;
+
+	}
+
+  .contenedor {
+	margin: auto;
+	width: 90%;
+	min-height: 550px;
+	height: auto;
+	border: 20px solid black;
+	font-size: 50px;
+	text-align: center;
+background: green ;
+display: grid;
+gap: 10px;
+box-shadow: 2px 2px 10px black;
+
+
+grid-template-areas: "header header header"
+                      "content content sidebar"
+                      "content content sidebar"
+                      "content content sidebar"
+                      "W1   W1   W2"
+                      "footer footer footer"
+
+
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .content,
+.contenedor .sidebar,
+.contenedor .W1,
+.contenedor .W2,
+.contenedor .footer {
+	background: ;
+	padding:20px;
+	border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+
+}
+
+
+.contenedor .header {
+	background: pink;
+	text-align: center;
+	grid-area: header;
+	height: 75px;
+	width: 100%;
+}
+
+.contenedor .content {
+	background: white;
+	text-align: center;
+	grid-area: content;
+	height: 75px;
+	width: 100%;
+}
+
+.contenedor .sidebar {
+  background: green;
+  text-align: center;
+  grid-area: sidebar;
+  width: 100px;
+  height: 75px;
+  align-self: right;
+}
+.contenedor .W1 {
+  background: green;
+  text-align: center;
+  grid-area: W1;
+  height: 75px;
+  width: 100%;
+}
+
+.contenedor .W2 {
+  background: green;
+  text-align: center;
+  grid-area: W2;
+  height: 75px;
+  width: 100%;
+}
+
+.contenedor .footer {
+  background: brown;
+  text-align: center;
+  grid-area: footer;
+  height: 75px;
+  width: 100%;
+}
